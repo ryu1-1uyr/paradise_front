@@ -7,7 +7,9 @@
 </template>
 
 <script>
-  const user_id=location.href.match(/[^\/]*$/)[0]
+  var user_id
+  setInterval(function(){user_id=location.href.match(/[^\/]*$/)[0]},1000)
+//初期で取得する必要はなくて、post するときに取得すればいい
     export default {
         name: "mypage",
       data(){
