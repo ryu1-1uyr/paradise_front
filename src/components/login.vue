@@ -36,8 +36,8 @@
           pwd: this.pwd
         })
           .then((response)=>{
-            console.log(response)
-
+            console.log(response.data.id)
+            window.location.href ='/#/mypage/'+ response.data.id
           })
 
 

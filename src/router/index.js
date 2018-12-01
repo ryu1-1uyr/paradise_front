@@ -6,6 +6,7 @@ import Login from '@/components/login'
 import Index from '@/components/index'
 import Test from '@/components/test'
 import Register from '@/components/register'
+import Mypage from '@/components/mypage'
 
 Vue.use(Router)
 
@@ -41,6 +42,11 @@ export default new Router({
       name: 'Register',
       component: Register,
       // redirect: '/login'
+    },
+    {
+      path: '/mypage/:id',
+      name: 'Mypage',
+      component: Mypage,
     }
   ]
 })
